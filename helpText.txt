@@ -1,0 +1,35 @@
+﻿fd x: beweeg de schildpad x stappen naar voren.
+bk x: beweeg de schildpad x stappen naar achteren.
+rt x: draai de schildpad x graden naar rechts.
+lt x: draai de schildpad x graden naar links.
+setorientation x: maakt de hoek van de schildpad x.
+speed x: maakt de snelheid van de schildpad x.
+setpos [x y]: verplaatst de schildpad naar de opgegeven coördinaten.
+
+circle x: tekent een cirkel met radius x.
+setpc [R G B]: maakt de kleur van de pen een RGB-kleur.
+setbc [R G B]: maakt de kleur van de achtergrond een RGB-kleur.
+
+pu: haalt de pen naar boven, zodat niet getekend kan worden.
+pd: brengt de pen weer naar onder.
+
+wait x: wacht x/60 seconden.
+to <name> cmd1 cmd2 ... cmd∞ end: stopt de opgegeven commando's in <name>
+repeat x [command]: herhaalt [commands] x keer.
+file [path]: voert de commando's in het opgegeven bestand uit.
+
+if [num1 operator num2] [commands]: voert [commands] uit als de opgegeven
+vergelijking waar is. Toegestane operators zijn <, =, > en combinaties.
+
+if [num1 operator num2] [commands 1] else [commands 2]: voert [commands 1] uit als de opgegeven vergelijking waar is en [commands 2] als de vergelijking niet waar is.
+
+for [var begin end {step}] [commands]: herhaalt de opdrachten een bepaald aantal keren.
+
+while [num1 operator num2] [commands]: herhaalt de opdrachten zolang de opgegeven stelling waar is.
+
+ht: verberg de schildpad.
+st: laat de schildpad verschijnen.
+
+cs: reset de GraphicsWindow.
+ct: maakt de TextWindow leeg.
+msg [text]: schrijf de tekst die tussen de haakjes staat in de TextWindow.
